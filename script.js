@@ -8,7 +8,7 @@ const setMessage = function (message) {
   document.querySelector(".message").textContent = message;
 };
 
-input.addEventListener("keyup", function (e) {
+document.querySelector("input").addEventListener("keyup", function (e) {
   if (e.keyCode === 13) {
     const guess = Number(document.querySelector(".guess").value);
 
